@@ -1,0 +1,40 @@
+{
+  "name": "we-need-a-warning-signal",
+  "main": "index.js",
+  "bin": {
+    "warning-signal": "./cli.js"
+  },
+  "version": "0.0.0",
+  "description": "'We need a warning signal' —Kevin Malone",
+  "license": "MIT",
+  "repository": "bendrucker/we-need-a-warning-signal",
+  "author": {
+    "name": "Ben Drucker",
+    "email": "bvdrucker@gmail.com",
+    "url": "bendrucker.me"
+  },
+  "scripts": {
+    "test": "standard && tape test.js"
+  },
+  "keywords": [
+    "warning",
+    "warn",
+    "fun",
+    "joke",
+    "office"
+  ],
+  "devDependencies": {
+    "concat-stream": "~1.6.0",
+    "proxyquire": "~1.7.11",
+    "split2": "~2.1.1",
+    "standard": "^7.0.0",
+    "tape": "^4.0.0"
+  },
+  "files": [
+    "*.js",
+    "warning.mp3"
+  ],
+  "dependencies": {
+    "play-sound": "~1.1.1"
+  }
+}
