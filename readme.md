@@ -26,7 +26,7 @@ createReadStream()
 ### CLI
 
 ```sh
-cat document.txt | warning-signal
+echo "warning" | warning-signal
 ```
 
 ![the trick is to undercook the onions](kevin.gif)
