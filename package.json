@@ -4,7 +4,7 @@
   "bin": {
     "warning-signal": "./cli.js"
   },
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "'We need a warning signal' —Kevin Malone",
   "license": "MIT",
   "repository": "bendrucker/we-need-a-warning-signal",
