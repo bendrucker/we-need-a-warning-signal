@@ -80,17 +80,19 @@ test('no match', function (t) {
     .on('finish', t.end)
 })
 
-test('cli', function (t) {
-  t.plan(1)
+if (!process.env.CI) {
+  test('cli', function (t) {
+    t.plan(1)
 
-  var cli = child.spawn('node', [path.resolve(__dirname, 'cli.js')])
+    var cli = child.spawn('node', [path.resolve(__dirname, 'cli.js')])
 
-  fs
-    .createReadStream(path.resolve(__dirname, 'fixtures', 'one-warning.txt'))
-    .pipe(cli.stdin)
+    fs
+      .createReadStream(path.resolve(__dirname, 'fixtures', 'one-warning.txt'))
+      .pipe(cli.stdin)
 
-  cli.stdout
-    .pipe(concat(function (data) {
-      t.equal(data.toString(), 'warning\n')
-    }))
-})
+    cli.stdout
+      .pipe(concat(function (data) {
+        t.equal(data.toString(), 'warning\n')
+      }))
+  })
+}
