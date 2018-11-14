@@ -1,4 +1,4 @@
-# we-need-a-warning-signal [![Build Status](https://travis-ci.org/bendrucker/we-need-a-warning-signal.svg?branch=master)](https://travis-ci.org/bendrucker/we-need-a-warning-signal)
+# we-need-a-warning-signal [![Build Status](https://travis-ci.org/bendrucker/we-need-a-warning-signal.svg?branch=master)](https://travis-ci.org/bendrucker/we-need-a-warning-signal) [![Greenkeeper badge](https://badges.greenkeeper.io/bendrucker/we-need-a-warning-signal.svg)](https://greenkeeper.io/)
 
 > ["We need a warning signal"](https://www.youtube.com/watch?v=AZfRggA3YYU) —Kevin Malone
 
